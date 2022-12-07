@@ -1,42 +1,331 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compitable" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, intial-scale=1"/>
+<title>Bhart email temp portfolio</title>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    body{
+        margin: 0;
+    }
+    table{
+        border-spacing: 0;
+    }
+    td{
+        padding: 0;
+    }
+    img{
+        border: 0;
+    }
+    .wrapper{
+        width: 100%;
+        background-color: #ffb6c1;
+        padding-bottom: 60px;
+        text-layout:fixed;
 
-on:
-  # Runs on pushes targeting the default branch
-  push:
-    branches: ["main"]
+    }
+    .main{
+        width: 100%;
+        max-width: 600px;
+        background-color: #ffffff;
+        font-family: sans-serif;
+        color: #4a4a4a;
+        box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+        text-align: center;
+    }
+    .social{
+        width: 30px;
+    }
+    .social-media{
+        padding: 15px 0 12px 80px;
+    }
+    .two-columns{
+        font-size: 0;
+        text-align: center;
+    }
+    .two-columns .column{
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    h3{
+        font-family: 'Roboto', sans-serif;
+        font-size: 28px;
+    }
+    h4{
+        font-family: 'Roboto', sans-serif;
+        font-size: 22px;
+    }
+    .button{
+        background-color: #fd0050;
+        color: #fff;
+        text-decoration: none;
+        padding: 12px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+    .three-columns{
+        font-size: 0;
+        padding: 35px 0 20px;
+    }
+    .three-columns .column{
+        width: 100%;
+        max-width: 200px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+    }
+    .three-columns .padding{
+        padding: 25px;
+    }
+    .three-columns .content{
+        font-size: 15px;
+        line-height: 20px;
+        
+    }
+    .two-columns.last{
+        padding: 35px 0;
+    }
+    .two-columns.padding{
+        padding: 20px;
+    }
+    .two-columns.content{
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+    }
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+</style>
+</head>
+<body>
+    <center class="wrapper">
 
-# Allow one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
+        <table class="main" width="100%" >
 
-jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          # Upload entire repository
-          path: '.'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+<!--border-->
+           <tr>
+              <td height="8" style="background-color: #000;"></td>
+           </tr>
+<!--logo nad social media section-->
+            <tr>
+                <td style="padding: 14px 0 4px;" >
+                    <table width="100%" >
+
+                        <tr>
+                            <td class="two-columns">
+                                <table class="column" >
+                                    <tr>
+                                        <td style="padding: 0px 55px 8px;">
+                                            <a href="https://fanticweb.in.net"><img src="https://i.postimg.cc/14VT23Pq/dfhfg.png" alt="Bhart portfolio" title="logo" width="180px"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td class="social-media">
+                                            <a href="#"><img src="https://i.postimg.cc/k2qp2NSQ/facebook.png" alt="" class="social"></a>
+                                            <a href="#"><img src="https://i.ibb.co/7Yy4jgR/instagram.png" alt="" class="social"></a>
+                                            <a href="#"><img src="https://i.ibb.co/5nkj88k/youtube.png" alt="" class="social"></a>
+                                            <a href="#"><img src="https://i.ibb.co/hWrSrzT/linkedin.png" alt="" class="social"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+<!--banner image-->
+            <tr>
+                <td>
+                    <a href="#"><img src="https://i.ibb.co/q7bqk0S/fashion.jpg" alt="" width="600" style="max-width: 100%; padding-bottom: 20px;" ></a>
+                </td>
+            </tr>
+
+<!--title, text & button-->
+            <tr>
+                <td style="padding: 20px 15px 50px;" >
+                    <table width="100%" style="text-align:center" >
+                        <tr>
+                            <td>
+                                <h3>What's new we have for <span style="color: #fd0050;">you</span></h3>
+                                <p style="line-height:23px; font-size:15px; padding: 5px 0 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lacus neque, efficitur eget varius vitae, lacinia eu ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Maecenas nisi tortor.</p>
+                                <a href="https://fanticweb.in.net" class="button">View Cataloge</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+<!--border-->
+            <tr>
+               <td height="2" style="background-color: #000;"></td>
+            </tr>
+
+<!--three column section-->
+            <tr>
+                <td>
+                    <table width="100%" >
+
+                        <tr >
+                            <td class="three-columns" >
+
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content" style="text-align:center">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="https://i.postimg.cc/56wr9KX9/fas1.png" alt="" width="150px"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h4>Winter fashion</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content" style="text-align:center">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="https://i.postimg.cc/qzfYTHMZ/fas2.png" alt="" width="150px"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 15px 0 10px;">
+                                                        <h4>Winter fashion</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content" style="text-align:center">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="https://i.postimg.cc/jDckPW6G/fas3.png" alt="" width="150px"></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding: 35px 0 10px;">
+                                                        <h4>Winter fashion</h4>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+
+<!--border-->
+        <tr>
+            <td height="2" style="background-color: #000;"></td>
+        </tr>
+<!--two column section-->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td class="two-columns last">
+
+                            <table class="column">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <a href="#"><img src="https://i.ibb.co/q7bqk0S/fashion.jpg" alt="" width="260" style="padding-bottom: 20px;"></a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="column">
+                                <tr>
+                                    <td class="padding">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <h4>Create your custom designs</h4>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu non odio euismod lacinia at quis risus.</p>
+                                                    <p style="padding-bottom:15px;">Fringilla est ullamcorper eget nulla facilisi etiam. Elit ut aliquam purus sit.</p>
+                                                    <a href="https://fanticweb.in.net" class="button">Create Now</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+<!--footer section-->
+        <tr>
+            <td style="background-color:#ffb6c1 ; color:#fff">
+                <table width="100%">
+
+                    <tr>
+                        <td style="padding: 45px 20px; text-align: center;">
+                            <a href="https://fanticweb.in.net"><img src="https://i.postimg.cc/14VT23Pq/dfhfg.png" alt="Bhart email temp portfolio" title="logo" width="260px" style="border-radius:10px;"></a>
+                            <p style="padding:5px 0 3px; color: #fff;" >Bhart email temp portfolio</p>
+                            <p style="padding:3px ; color: #fff;">332001, sikar, Rajasthan, IND</p>
+                            <a href="#"><img src="https://i.postimg.cc/k2qp2NSQ/facebook.png" alt="" class="social"></a>
+                            <a href="#"><img src="https://i.ibb.co/7Yy4jgR/instagram.png" alt="" class="social"></a>
+                            <a href="#"><img src="https://i.ibb.co/5nkj88k/youtube.png" alt="" class="social"></a>
+                            <a href="#"><img src="https://i.ibb.co/hWrSrzT/linkedin.png" alt="" class="social"></a>
+
+                            <p style="padding:10px ; color: #fff;">--unsubscribe--</p> <!--unsubscribe-->
+
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+
+
+
+        </table> <!--end of main class-->
+
+    </center> <!--end wrapper-->
+</body>
+</html>
